@@ -1,4 +1,4 @@
-//dán nó ở đây
+process.on('unhandledRejection', (err, p) => {});
 const { readdirSync, readFileSync, writeFileSync, existsSync, unlinkSync, rm } = require("fs-extra");
 const { join, resolve } = require("path");
 const { execSync } = require('child_process');
